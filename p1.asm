@@ -25,6 +25,8 @@ _start:
  mov edx, 30
  int 0x80
 
+ mov edi, ecx
+ mov ecx, 0
  call strlen
 strlen:
  ; Se agrega strlen para obtener el tamaño de la cadena
