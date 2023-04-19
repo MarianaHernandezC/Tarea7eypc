@@ -31,7 +31,7 @@ _start:
  call strlen
 strlen:
  ; Se agrega strlen para obtener el tamaño de la cadena
- imp [edi],0
+ cmp [edi],0
  jz function            ;salto a la función donde se guardara la frase invertida
  inc eax
  inc edi
